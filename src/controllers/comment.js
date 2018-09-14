@@ -1,7 +1,7 @@
 const CommentModel = require('../models/Comment');
 
-exports.get = async fields => {
-  const query = CommentModel.findOne(fields);
+exports.getAll = async fields => {
+  const query = CommentModel.find(fields);
   return await query.exec();
 }
 
