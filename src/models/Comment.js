@@ -11,7 +11,12 @@ const CommentSchema = new Schema({
     type: String,
     trim: true,
     index: true
+  },
+  url: {
+    type: String,
+    trim: true,
+    index: true
   }
 });
 
-module.exports = mongoose.model('Comment', UserSchema);
+module.exports = mongoose.model('Comment', CommentSchema);
