@@ -1,14 +1,12 @@
 const Router = require('koa-router');
 
-const login = require('./login');
-const register = require('./register');
-const assets = require('./assets');
+const postComment = require('./postComment');
+const getComments = require('./getComments');
 
 const router = new Router();
 
 router
-  .post('/login', login)
-  .get('/assets', assets)
-  .post('/register', register);
+  .post('/comment', postComment)
+  .get('/comments', getComments)
 
 module.exports = router;
