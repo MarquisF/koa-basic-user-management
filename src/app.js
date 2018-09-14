@@ -24,7 +24,7 @@ const router = new Router();
  * connect to mongodb server
  */
 mongoose.connect(
-  'mongodb://localhost/gxUserComment',
+  'mongodb://localhost/koaUserManagement',
   {
     useNewUrlParser: true
   }
